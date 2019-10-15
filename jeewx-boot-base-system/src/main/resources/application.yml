@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8080
   servlet:
     context-path: /jeewx
     compression:
@@ -26,9 +26,9 @@ spring:
           filters: stat
           driver-class-name: com.mysql.jdbc.Driver
           #基本属性
-          url: jdbc:mysql://127.0.0.1:3306/jeewx-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false
+          url: jdbc:mysql://106.14.170.234:3306/jeewx-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false
           username: root
-          password: root
+          password: Sywl@1234
           #配置初始化大小/最小/最大
           initial-size: 1
           min-idle: 1
@@ -62,9 +62,9 @@ jeewx:
          access-sign-interceptor: /api/cms/**,/cms/**,/wechatController.do,/weixinNewsController/goContent.do,/weixinLinksucai/link.do,/linksucai/link.do,/fx/mall/payCallBack.do,/newsController/getNewsClassify.do,/newsController/getNewslist.do,/CommonController/sendMsgCode.do
     #Redis缓存配置
     redis:
-       ip: 127.0.0.1
+       ip: 106.14.170.234
        port: 6379
-       password:
+       password: Sywl@1234
        pool:
           maxTotal: 1024
           maxIdle: 200
